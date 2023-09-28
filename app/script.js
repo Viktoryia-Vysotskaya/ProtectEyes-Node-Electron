@@ -2,6 +2,12 @@ import React from 'react';
 import { render } from 'react-dom';
 
 const App = () => {
+  const [status, setStatus] = useState("off");
+  // The "status" variable informs about the application status: off, work or rest. By default we set it to "off".
+  const [time, setTime] = useState(null);
+  // The "time" variable will store the counter time in seconds. Initially, the value is set to null.
+  const [timer, setTimer] = useState(null);
+  // The "timer" variable will store the future interval (interval). First we set it to null.
   return (
     <div>
       <h1>Protect your eyes</h1>
